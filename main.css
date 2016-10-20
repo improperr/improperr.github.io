@@ -1,14 +1,6 @@
 .Aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Aligner-item {
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.Aligner-item--top {
-  align-self: flex-start;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
 }
