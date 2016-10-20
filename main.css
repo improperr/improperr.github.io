@@ -7,3 +7,7 @@
 .Aligner-item {
   max-width: 50%;
 }
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
