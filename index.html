@@ -57,7 +57,7 @@
 							scene = new THREE.Scene();
 
 							geometry = new THREE.CubeGeometry( 1, 1, 1 );
-							material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframeLinewidth: 2 } );
+							material = new THREE.MeshBasicMaterial( { color: 0xD3D3D3, wireframe: true, wireframeLinewidth: 1 } );
 
 							mesh = new THREE.Mesh( geometry, material );
 							scene.add( mesh );
@@ -69,7 +69,7 @@
 							requestAnimationFrame( animate );
 
 							mesh.rotation.x = Date.now() * 0.0005;
-							mesh.rotation.y = Date.now() * 0.001;
+							mesh.rotation.y = Date.now() * 0.0005;
 
 							renderer.render( scene, camera );
 
