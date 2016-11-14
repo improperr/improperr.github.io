@@ -39,7 +39,7 @@
 					<br>
 					plus three eight one six zero six six two nine one four eight
 				</em>
-				<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
 					<script>
 
 						var camera, scene, renderer;
@@ -47,7 +47,7 @@
 
 						function init() {
 
-							render = new THREE.CanvasRenderer();
+							renderer = new THREE.CanvasRenderer();
 							renderer.setSize( window.innerWidth, window.innerHeight );
 							document.body.appendChild( renderer.domElement );
 
@@ -57,7 +57,7 @@
 							scene = new THREE.Scene();
 
 							geometry = new THREE.CubeGeometry( 1, 1, 1 );
-							material = new THREE.MeshBasicMaterial( { color: 0xd3d3d3, wireframe: true, wireframeLinewidth: 1 } );
+							material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true, wireframeLinewidth: 2 } );
 
 							mesh = new THREE.Mesh( geometry, material );
 							scene.add( mesh );
@@ -69,7 +69,7 @@
 							requestAnimationFrame( animate );
 
 							mesh.rotation.x = Date.now() * 0.0005;
-							mesh.rotation.y = Date.now() * 0.0005;
+							mesh.rotation.y = Date.now() * 0.001;
 
 							renderer.render( scene, camera );
 
@@ -79,6 +79,6 @@
 						animate();
 
 					</script>
-			</div>
-		</font>
-	</section>
+		</div>
+	</font>
+</section>
