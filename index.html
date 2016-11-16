@@ -51,7 +51,7 @@
 							renderer.setSize( window.innerWidth, window.innerHeight );
 							document.body.appendChild( renderer.domElement );
 
-							camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 10 );
+							camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight );
 							camera.position.z = 3;
 
 							scene = new THREE.Scene();
