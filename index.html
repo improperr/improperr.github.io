@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-	 <style>
+	<style>
    		body {
         	background: white;
 		overflow: hidden;
 		}
+		
    		section {
         	position: fixed;
         	top: 50%;
         	left: 50%;
         	margin-right: -50%;
         	transform: translate(-50%, -50%) }
-  		</style>
-		<title>vuk savić</title>
+	</style>
+
+	<title>vuk savić</title>
   		<section>
 			<div align="center">
-				<font face="courier new">
-					<u>
-						<em>
-							<strong>
-								vuk savić's personal website
-							</strong>
-						</em>
-					</u>
-				</p>
+			<font face="courier new">
+			<u><em><strong>vuk savić's personal website</strong></em></u></p>
 			<br>
 			<a href="https://soundcloud.com/vukintosh/">music</a> | <a href="https://vuksavic.deviantart.com/">art</a> | <a href="https://instagram.com/vukintosh/">photography</a> | <a href="https://github.com/vuksavic/">programming</a></p>
 			<br>
@@ -30,54 +25,50 @@
 			<br>
 				[ ]</p>	
 			<br>
-				<em>
-					contact:</p>
-					<br>
-					vuk at teknik dot io</p>
-					vuk at tfwno dot gf</p>
-					<br>
-					plus three eight one six zero six six two nine one four eight
-				</em>
+			<em>
+				contact:</p>
+				<br>
+				vuk at teknik dot io</p>
+				vuk at tfwno dot gf</p>
+				<br>
+				plus three eight one six zero six six two nine one four eight
+			</em>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
-					<script>
+				<script>
+					var camera, scene, renderer;
+					var geometry, material, mesh;
 
-						var camera, scene, renderer;
-						var geometry, material, mesh;
+					function init() {
 
-						function init() {
+						renderer = new THREE.CanvasRenderer();
+						renderer.setSize( window.innerWidth, window.innerHeight );
+						document.body.appendChild( renderer.domElement );
 
-							renderer = new THREE.CanvasRenderer();
-							renderer.setSize( window.innerWidth, window.innerHeight );
-							document.body.appendChild( renderer.domElement );
+						camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight );
+						camera.position.z = 3;
 
-							camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight );
-							camera.position.z = 3;
+						scene = new THREE.Scene();
 
-							scene = new THREE.Scene();
+						geometry = new THREE.CubeGeometry( 1, 1, 1 );
+						material = new THREE.MeshBasicMaterial( { color: 0xbababa, wireframe: true, wireframeLinewidth: 1 } );
 
-							geometry = new THREE.CubeGeometry( 1, 1, 1 );
-							material = new THREE.MeshBasicMaterial( { color: 0xbababa, wireframe: true, wireframeLinewidth: 1 } );
+						mesh = new THREE.Mesh( geometry, material );
+						scene.add( mesh );
+					}
 
-							mesh = new THREE.Mesh( geometry, material );
-							scene.add( mesh );
+					function animate() {
 
-						}
+						requestAnimationFrame( animate );
 
-						function animate() {
+						mesh.rotation.x = Date.now() * 0.0005;
+						mesh.rotation.y = Date.now() * 0.0005;
 
-							requestAnimationFrame( animate );
+						renderer.render( scene, camera );
+					}
 
-							mesh.rotation.x = Date.now() * 0.0005;
-							mesh.rotation.y = Date.now() * 0.0005;
-
-							renderer.render( scene, camera );
-
-						}
-
-						init();
-						animate();
-
-					</script>
+					init();
+					animate();
+			</script>
 		</div>
 	</font>
 </section>
