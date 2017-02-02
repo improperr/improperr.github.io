@@ -8,8 +8,8 @@ a.uid=cstrpuid,a.ga="TRUE"
 var d={}
 d.allowscriptaccess="always"
 var n={}
-n.wmode="opaque",swfobject.embedSWF("http://cdn.caster.fm/0070B7/widgets/player.swf","CasterfmPlayer",cstrpwidth,cstrpheight,"10.0.0","http://cdn.caster.fm/0070B7/widgets/inc/expressInstall.swf",a,d,n)};cstrloadScript("http://mmrm.qadserve.com/qadserve_lightbox.min.js",cstradload);},cstrpload=function(){var e=document.getElementById("cstrplb"),t=document.getElementById("cstrplb2")
+n.wmode="opaque",swfobject.embedSWF("player.swf","CasterfmPlayer",cstrpwidth,cstrpheight,"10.0.0","expressInstall.swf",a,d,n)};cstrloadScript("qadserve_lightbox.min.js",cstradload);},cstrpload=function(){var e=document.getElementById("cstrplb"),t=document.getElementById("cstrplb2")
 e&&"undefined"!=e&&"null"!=e&&void 0!=e&&null!=e&&t&&"undefined"!=t&&"null"!=t&&void 0!=t&&null!=t||alert("Please do not remove the Caster.fm link. \n IT IS GOING TO BE HIDDEN ANYWAY.")
 var a=e.firstChild.nodeValue,d=e.href,n=t.firstChild.nodeValue,r=t.href
-"Free Shoutcast Hosting"!=a||"http://www.caster.fm/"!=d||"Radio Stream Hosting"!=n||"http://www.caster.fm/"!=r?alert("Please do not remove the Caster.fm link.\n  IT IS GOING TO BE HIDDEN ANYWAY."):(e.style.display="none",t.style.display="none",cstrloadScript("http://cdn.caster.fm/0070B7/widgets/inc/swfobject.js",cstrloadPlayer))}
+"Free Shoutcast Hosting"!=a||"http://www.caster.fm/"!=d||"Radio Stream Hosting"!=n||"http://www.caster.fm/"!=r?alert("Please do not remove the Caster.fm link.\n  IT IS GOING TO BE HIDDEN ANYWAY."):(e.style.display="none",t.style.display="none",cstrloadScript("swfobject.js",cstrloadPlayer))}
 bindEvent(window,"load",cstrpload);
