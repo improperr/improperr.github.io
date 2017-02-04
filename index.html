@@ -1,77 +1,48 @@
 <!DOCTYPE html>
-	<style>
-   		body {
-        	background: white;
-		overflow: hidden;
-		}
-		
-		a {
-		color: black;
-		}
-		
-   		section {
-        	position: fixed;
+<html>
+	   <style>
+   		   body {
+        	background: black;
+            overflow: hidden;
+           }
+          
+           a {
+            color: white;
+           }
+   		   
+           section1 {
+            position: fixed;
         	top: 50%;
         	left: 50%;
         	margin-right: -50%;
-        	transform: translate(-50%, -50%) }
-	</style>
+        	transform: translate(-50%, -50%)
+           }
+           
+           section2 {
+            position: fixed;
+        	top: 99%;
+        	left: 95%;
+        	margin-right: -3%;
+        	transform: translate(-10%, -60%)
+           }
+  		</style>
+    
+        <section1>
+            <title>lofi.radio</title>
+            <div align="center">
+                <font face="courier">
+                    <font color="white">
+			    <img src="http://i.imgur.com/MiYEED1.gif"></p>
+			<audio controls><source src="http://shaincast.caster.fm:38646/listen.mp3" type="audio/mpeg"></audio></p>
+		    <a href="https://lofi.hiphop/">lofi.hiphop</a></p>
+		    <a href="https://www.redbubble.com/people/lofiradio/shop">shop</a>
+                </font>
+            </div>
+        </section1>
 
-	<title>vuk savić</title>
-  		<section>
-			<div align="center">
-			<font face="courier" font size="12">
-			<u><em><strong>vuk savić's personal website</strong></em></u></p>
-			<br>
-			<a href="https://soundcloud.com/vukintosh/">music</a> | <a href="https://vuksavic.deviantart.com/">art</a> | <a href="https://instagram.com/vukintosh/">photography</a> | <a href="https://github.com/vuksavic/">programming</a></p>
-			<br>
-			44°48'58.3"N 20°27'21.1"E</p>
-			<br>
-				[ ]</p>	
-			<br>
-			<em>
-				contact:</p>
-				<br>
-				vuks at sbb dot rs</p>
-				<br>
-				plus three eight one six zero six six two nine one four eight
-			</em>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r57/three.min.js"></script>
-				<script>
-					var camera, scene, renderer;
-					var geometry, material, mesh;
-
-					function init() {
-
-						renderer = new THREE.CanvasRenderer();
-						renderer.setSize( window.innerWidth, window.innerHeight );
-						document.body.appendChild( renderer.domElement );
-
-						camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight, window.innerWidth / window.innerHeight );
-						camera.position.z = 3;
-
-						scene = new THREE.Scene();
-
-						geometry = new THREE.CubeGeometry( 1, 1, 1 );
-						material = new THREE.MeshBasicMaterial( { color: 0xbababa, wireframe: true, wireframeLinewidth: 1 } );
-
-						mesh = new THREE.Mesh( geometry, material );
-						scene.add( mesh );
-					}
-
-					function animate() {
-
-						requestAnimationFrame( animate );
-
-						mesh.rotation.x = Date.now() * 0.0005;
-						mesh.rotation.y = Date.now() * 0.0005;
-
-						renderer.render( scene, camera );
-					}
-
-					init();
-					animate();
-			</script>
-		</div>
-	</font>
-</section>
+        <section2>
+                <font color="white">
+                <font size = "1">site made by <a href="https://vuksavic.github.io/">vuk</a></p>
+        </section2>
+    </body>
+</html>
