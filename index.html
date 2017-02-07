@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html>
 	<title>improper radio</title>
+	
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
-	   <style>
-   		   body {
-        	background: black;
-            overflow: hidden;
-           }
+	
+	<style>
+		body {
+			background: black;
+			overflow: hidden; }
           
-           a {
-            color: white;
-           }
+		a {
+			color: white; }
    		   
-           section1 {
-            position: fixed;
-        	top: 50%;
-        	left: 50%;
-        	margin-right: -50%;
-        	transform: translate(-50%, -50%)
-           }
+		section1 {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%) }
            
-           section2 {
- 		margin-right:5px;
-  		position:relative;
-  		float:right;
-           }
+		section2 {
+			margin-right:5px;
+			position:relative;
+			float:right; }
 		   
-	video#bgvid { 
-  	 position: fixed;
-  	 top: 50%;
-  	 left: 50%;
-  	 min-width: 100%;
-  	 min-height: 100%;
-  	 width: auto;
-  	 height: auto;
-  	 z-index: -100;
-  	 -ms-transform: translateX(-50%) translateY(-50%);
-  	 -moz-transform: translateX(-50%) translateY(-50%);
-  	 -webkit-transform: translateX(-50%) translateY(-50%);
-  	 transform: translateX(-50%) translateY(-50%);
-  	 background: url(funkytapes.png) no-repeat;
-   	 background-size: cover; 
-	}
+		video#bgvid { 
+			pointer-events: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;	
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			-ms-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			background: url(funkytapes.png) no-repeat;
+			background-size: cover; }
 	</style>
 	
-   	<video playsinline autoplay muted loop poster="funkytapes.png" id="bgvid">
-    		<source src="video.mp4" type="video/mp4">
+	<video playsinline autoplay muted loop poster="funkytapes.png" id="bgvid">
+		<source src="video.mp4" type="video/mp4">
 	</video>
         
 	<section1>
-	<div align="center">	
-                <font face="courier">
-                    <font color="white">
-			    <img src="newbadge.png" style="width:321px;height:321px;"></p>
-			<audio controls autoplay><source src="http://shaincast.caster.fm:38646/listen.mp3" type="audio/mpeg"></audio></p>
-		    <a target="_blank" href="https://twitter.com/improper_radio">twitter</a>
-		    <a target="_blank" href="https://www.redbubble.com/people/lofiradio/shop">shop</a>
-                </font>
-            </div>
-        </section1>
+		<div align="center">	
+		<font face="courier">
+		<font color="white">
+		<img src="newbadge.png" style="width:321px;height:321px;"></p>
+		<audio controls autoplay><source src="http://shaincast.caster.fm:38646/listen.mp3" type="audio/mpeg"></audio></p>
+		<a target="_blank" href="https://twitter.com/improper_radio">twitter</a>
+		<a target="_blank" href="https://www.redbubble.com/people/lofiradio/shop">shop</a>
+		</div>
+	</section1>
 
-        <section2>
-                <font face="courier" color="white">
-                <font size = "1">site made by <a href="https://vuksavic.github.io/">vuk</a></p>
-        </section2>
-    </body>
+	<section2>
+		<font face="courier" size = "1" color="white">site made by <a href="https://vuksavic.github.io/">vuk</a></font>
+	</section2>
 </html>
