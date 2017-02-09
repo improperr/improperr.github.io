@@ -10,13 +10,29 @@
 	<meta name="theme-color" content="#ffffff">
 	
 	<style>
+		.hoverinfo {
+			position: absolute;
+			top: 15px;
+			left: 15px;
+			font: courier;
+  			<!-- font-size: 28px; -->
+  			color: #ffffff;
+  			cursor: pointer; }
+
+		.hoverinfo p {
+  			display: none;
+  			color: #000000; }
+
+		.hoverinfo:hover p {
+  			background-color: rgba(255, 255, 255, 0.7);
+  			display: block; }
+
 		body {
 			background: black;
 			overflow: hidden; }
           
 		a {
-			color: white;
-			text-decoration: none; }
+			color: white; }
    		   
 		section1 {
 			position: fixed;
@@ -59,7 +75,7 @@
 			<p><audio controls autoplay><source src="http://shaincast.caster.fm:38646/listen.mp3" type="audio/mpeg" onerror="this.src='http://92.53.119.28:8000';"></audio></p>
 			<a target="_blank" href="https://twitter.com/improper_radio">twitter</a>
 			<a target="_blank" href="https://www.redbubble.com/people/lofiradio/shop">shop</a>
-			<a target="_blank" href="https://www.paypal.me/lfhhradio">donate via paypal</a>
+			<a target="_blank" href="https://www.paypal.me/lfhhradio">donate</a>
 		</font>
 		</div>
 	</section1>
